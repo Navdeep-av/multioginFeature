@@ -1,0 +1,58 @@
+DB Username - navdeepGupta
+DB Pass - DbPassword
+
+
+---------
+
+Doubts
+1) Sytax of mongoDB
+
+2) from mongoDB
+_id:67ba286ab1de16b4b0387ec7
+name:"Navdeep"
+email:"navdeep@gmail.com"
+password:"smbdhgs"
+__v:0
+
+isme __v?
+
+
+3) What is new User in db schema?
+
+4) signup hone par complete schema DB me create hoga?
+
+5) Device Detection wala code kese chal ra hai?
+
+6) Same browser se aaya toh last login kese update kerenge?
+
+
+
+8) why this is giving nothing -   res.json(user.loggedInDevice);
+
+This is giving data - res.json({
+  success: true,
+  userDevices: user.loggedInDevice || [],
+});
+
+9) device Detection ka logic kaha hoga? express me or frontend me?
+
+10) navigate and <Navigate/>
+
+11) token ka flow kese hoga? kab kab use aayega
+
+12) what is $pull in db query 
+cd "/d/For Other Drive/Study/VSS/My Practice/Backend/MultiLogin Feature/vite-project/backend"
+
+13) how to check in db for find the browserID?
+
+14) const browserID = req.headers["browserid"];
+const getBrowserID = localStorage.getItem("browserID");.
+
+15) It is all done, now what if someone wants to create new ID
+
+16) .env file agar library use nhi kare toh?
+
+
+browserID case sensitive ka issue aa ra tha?
+
+navdeepg@gmail.com
