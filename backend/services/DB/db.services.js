@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
-require("dotenv").config();
+const { mongoURI } = require("../../app.config.js");
 
 const connectDB = () => {
   console.log("Inside Moniog");
   mongoose
-    .connect(process.env.MONGOURI, {})
+    .connect(mongoURI, {})
     .then(() => console.log("MongoDB Connected"))
     .catch((err) => console.error("MongoDB Connection Error:", err));
 };

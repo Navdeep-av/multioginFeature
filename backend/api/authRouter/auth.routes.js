@@ -9,7 +9,7 @@ const {
 
 const signupCreation = require("../middlewares/signupcreation.js");
 
-const deviceDetector = require("../../device-detection.js");
+const deviceDetector = require("../middlewares/device-detection.js");
 
 const router = Express.Router();
 

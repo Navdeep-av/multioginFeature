@@ -1,23 +1,20 @@
 const jwt = require("jsonwebtoken");
-require("dotenv").config();
 
-// const { expiresIn, SECRET_KEY } = require("./jwt.config.js");
-
-console.log("expire In", process.env.expiresIn);
+const { expiredIn, secret_Key } = require("../../app.config.js");
 
 const jwtSignin = (payload) => {
   const options = {
-    expiresIn: process.env.EXPIRESIN,
+    expiresIn: expiredIn,
   };
 
   console.log("Options", options);
-  const token = jwt.sign(payload, process.env.SECRET_KEY, options);
+  const token = jwt.sign(payload, secret_Key, options);
 
   return token;
 };
 
 const jwtVerify = (token) => {
-  const token_Verify = jwt.verify(token, process.env.SECRET_KEY);
+  const token_Verify = jwt.verify(token, secret_Key);
 
   return token_Verify;
 };

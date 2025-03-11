@@ -1,4 +1,3 @@
-require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -16,7 +15,7 @@ app.use(requestIp.mw());
 
 const authsRouter = require("./api/authRouter/auth.routes.js");
 
-const port = process.env.PORT;
+const { port } = require("./app.config.js");
 
 connectDB();
 
